@@ -99,7 +99,8 @@ let user_age = age>=18?'user age is greater than 18.':'user age smaller than 18.
 console.log(user_age);
 
 console.log(`user age is${age>=21?' greater ':' smaller '}than 18.`);
-*/
+
 let bill = 275;
 let tip = 50<=bill && bill>=100 ? (bill*15)/100 : (bill*20)/100;
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value is ${bill+tip}`);
+*/
