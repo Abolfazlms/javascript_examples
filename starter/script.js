@@ -24,4 +24,11 @@ console.log(typeof javascriptIsfun);
 
 let testvariable;
 console.log(typeof testvariable);
+
+const firstName = "ali";
+const lastName = "alipour";
+const birth_year = 1991;
+// const user_info ="the user "+firstName+" "+lastName+" birth in "+birth_year+" and he has "+(2022-birth_year)+" years old.";
+const user_info =`the user ${firstName} ${lastName} birth in ${birth_year} and he has ${2022-birth_year} years old.`;
+console.log(user_info);
 */
