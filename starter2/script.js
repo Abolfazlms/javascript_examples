@@ -67,20 +67,21 @@
 //     console.log('hossein not in friend list.');
 // }
 
-function tipCalculator(bill){
-    // if(bill>=50 && bill<=300){
-    //     return bill*0.15;
-    // }
-    // else{
-    //     return bill*0.2;
-    // }    
-    return bill>=50 && bill<=300 ? bill*0.15 : bill*0.2;
-}
-const bills = [125,55,44];
-const tips = [tipCalculator(bills[0]),tipCalculator(bills[1]),tipCalculator(bills[2])];
-const totalValues = [tips[0]+bills[0]];
-totalValues.push(bills[1]+tips[1]);
-totalValues.push(bills[2]+tips[2]);
+// function tipCalculator(bill){
+//     if(bill>=50 && bill<=300){
+//         return bill*0.15;
+//     }
+//     else{
+//         return bill*0.2;
+//     }    
+//     return bill>=50 && bill<=300 ? bill*0.15 : bill*0.2;
+// }
+// const bills = [125,55,44];
+// const tips = [tipCalculator(bills[0]),tipCalculator(bills[1]),tipCalculator(bills[2])];
+// const totalValues = [tips[0]+bills[0]];
+// totalValues.push(bills[1]+tips[1]);
+// totalValues.push(bills[2]+tips[2]);
 
-console.log(bills,tips);
-console.log(totalValues);
+// console.log(bills,tips);
+// console.log(totalValues);
+
