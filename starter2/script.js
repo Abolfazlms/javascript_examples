@@ -17,19 +17,30 @@
 // }
 // const sumToValue = Number=>{Number+21;
 // }
-const average_Calculator = (score1,score2,score3) =>{(score1+score2+score3)/3;};
+// const average_Calculator = (score1,score2,score3) =>{(score1+score2+score3)/3;};
 
-const team_1 = average_Calculator(44,23,61);
-const team_2 = average_Calculator(52,31,25);
+// const team_1 = average_Calculator(44,23,61);
+// const team_2 = average_Calculator(52,31,25);
 
-const check_winner = function(avg1,avg2){
-    if(avg1>=2*avg2){
-        return `team1 with average score ${avg1} is winner!`;
-    }else if(avg2>=2*avg1){
-        return `team2 with average score ${avg2} is winner!`;
-    }else{
-        return `team1 and team2 is equal.`;
-    }
+// const check_winner = function(avg1,avg2){
+//     if(avg1>=2*avg2){
+//         return `team1 with average score ${avg1} is winner!`;
+//     }else if(avg2>=2*avg1){
+//         return `team2 with average score ${avg2} is winner!`;
+//     }else{
+//         return `team1 and team2 is equal.`;
+//     }
+// }
+// console.log(check_winner(team_1,team_2));
+// console.log(check_winner(43,21));
+
+// const friends = new Array('ali','steve','hassan');
+const friends = ['ali','steve','hassan'];
+const birth_year = 1990;
+
+const age_calculator = function(birth_year){
+    return 2023-birth_year;
 }
-console.log(check_winner(team_1,team_2));
-console.log(check_winner(43,21));
+
+const person = ['ali','alipour',age_calculator(birth_year),1000,friends];
+console.log(person);
