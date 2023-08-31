@@ -37,10 +37,10 @@
 // const friends = new Array('ali','steve','hassan');
 const friends = ['ali','steve','hassan'];
 const birth_year = 1990;
-
+const money = [1000,2000,2500];
 const age_calculator = function(birth_year){
     return 2023-birth_year;
 }
 
-const person = ['ali','alipour',age_calculator(birth_year),1000,friends];
+const person = ['ali','alipour',age_calculator(birth_year),money[money.length-1],friends];
 console.log(person);
