@@ -44,3 +44,25 @@ const age_calculator = function(birth_year){
 
 const person = ['ali','alipour',age_calculator(birth_year),money[money.length-1],friends];
 console.log(person);
+
+friends.push('hossein')
+console.log(friends);
+
+friends.pop('hossein');
+console.log(friends);
+
+friends.unshift('alireza');
+console.log(friends);
+
+friends.shift('alireza');
+console.log(friends);
+
+const friend_index = friends.indexOf('ali');
+console.log(`ali is ${friend_index+1}st of your friends`);
+
+const isFriend = friends.includes('hossein');
+if(isFriend){
+    console.log('hossein is friends.');
+}else{
+    console.log('hossein not in friend list.');
+}
