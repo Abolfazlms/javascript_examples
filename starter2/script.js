@@ -85,3 +85,22 @@
 // console.log(bills,tips);
 // console.log(totalValues);
 
+const person = {
+    firstName:'ali',
+    lastName:'alipour',
+    age:21,
+    friends:['ali','hossein']
+};
+console.log(person);
+console.log(person.firstName);
+
+let option = 'firstName'
+console.log(person.option);
+console.log(person[option]);
+
+person.location = 'london';
+person['gmail'] = 'example@gmail.com';
+
+console.log(person);
+
+console.log(`${person.firstName} has ${person.friends.length} friends, and his best friend is called ${person.friends[0]}`)
