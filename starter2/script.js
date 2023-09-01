@@ -121,32 +121,51 @@
 // console.log(person.ageCalculator());
 // console.log(person.getSummary());
 
-const person1 = {
-    fullName:'ali alipour',
-    height:1.80,
-    mass:50,
-    BMI_Calculator:function(){
-        this.bmi = this.mass/(this.height**2);
-        return this.bmi;
-    }
-};
-const person2 = {
-    fullName:'hossein hosseini',
-    height:1.91,
-    mass:60,
-    BMI_Calculator:function(){
-        this.bmi = this.mass/(this.height**2);
-        return this.bmi;
-    }
-};
+// const person1 = {
+//     fullName:'ali alipour',
+//     height:1.80,
+//     mass:50,
+//     BMI_Calculator:function(){
+//         this.bmi = this.mass/(this.height**2);
+//         return this.bmi;
+//     }
+// };
+// const person2 = {
+//     fullName:'hossein hosseini',
+//     height:1.91,
+//     mass:60,
+//     BMI_Calculator:function(){
+//         this.bmi = this.mass/(this.height**2);
+//         return this.bmi;
+//     }
+// };
 
-person1.BMI_Calculator();
-person2.BMI_Calculator();
+// person1.BMI_Calculator();
+// person2.BMI_Calculator();
 
-if(person1.bmi>person2.bmi){
-    console.log(`${person1.fullName}'s BMI(${person1.bmi}) is higher than ${person2.fullName}'s BMI(${person2.bmi})`);
-}else if(person2.bmi>person1.bmi){
-    console.log(`${person2.fullName}'s BMI(${person2.bmi}) is higher than ${person1.fullName}'s BMI(${person1.bmi})`);
-}else{
-    console.log(`${person1.fullName}'s BMI(${person1.bmi}) is equal to ${person2.fullName}'s BMI(${person2.bmi})`);
+// if(person1.bmi>person2.bmi){
+//     console.log(`${person1.fullName}'s BMI(${person1.bmi}) is higher than ${person2.fullName}'s BMI(${person2.bmi})`);
+// }else if(person2.bmi>person1.bmi){
+//     console.log(`${person2.fullName}'s BMI(${person2.bmi}) is higher than ${person1.fullName}'s BMI(${person1.bmi})`);
+// }else{
+//     console.log(`${person1.fullName}'s BMI(${person1.bmi}) is equal to ${person2.fullName}'s BMI(${person2.bmi})`);
+// }
+
+// for(let i = 0 ; i < 10 ; i++){
+//     console.log(i);
+// }
+
+const person = [
+    'ali',
+    'alipour',
+    1991,
+    ['ali','hossein'],
+];
+const arrayTypes = [];
+
+for (let i = 0; i < person.length; i++){
+    console.log(person[i], typeof person[i]);
+    // arrayTypes[i] = typeof person[i];
+    arrayTypes.push(typeof person[i]);
 }
+console.log(arrayTypes);
