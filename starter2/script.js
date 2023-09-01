@@ -201,8 +201,30 @@
 // }
 // console.log(arrayTypes);
 
-let number = Math.trunc(Math.random()*30)+1;
-while(number !== 21){
-    number = Math.trunc(Math.random()*30)+1;
-    console.log(`the random number is : ${number}`);
+// let number = Math.trunc(Math.random()*30)+1;
+// while(number !== 21){
+//     number = Math.trunc(Math.random()*30)+1;
+//     console.log(`the random number is : ${number}`);
+// }
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const total_values = [];
+
+for(let i = 0; i < bills.length; i++){
+    const tip = tipsCalculator(bills[i]);
+    tips.push(tip);
+    total_values.push(tip+bills[i]);
+}    
+function tipsCalculator(bill){
+    return bill >= 50 && bill <= 300 ? bill*0.15 : bill*0.2 ;
 }
+console.log(bills,tips,total_values);
+const average_calculator = function(money_array){
+    let money = 0;
+    for(let i = 0; i<money_array.length;i++){
+        money+= money_array[i];
+    }
+    return money/money_array.length;
+}
+console.log(`the average of bills with tips is ${average_calculator(total_values)} $`);
