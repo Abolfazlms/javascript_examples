@@ -155,17 +155,48 @@
 //     console.log(i);
 // }
 
-const person = [
-    'ali',
-    'alipour',
-    1991,
-    ['ali','hossein'],
-];
-const arrayTypes = [];
+// const person = [
+//     'ali',
+//     'alipour',
+//     1991,
+//     ['ali','hossein'],
+// ];
+// const arrayTypes = [];
 
-for (let i = 0; i < person.length; i++){
-    console.log(person[i], typeof person[i]);
-    // arrayTypes[i] = typeof person[i];
-    arrayTypes.push(typeof person[i]);
-}
-console.log(arrayTypes);
+// for (let i = 0; i < person.length; i++){
+//     console.log(person[i], typeof person[i]);
+//     // arrayTypes[i] = typeof person[i];
+//     arrayTypes.push(typeof person[i]);
+// }
+// console.log(arrayTypes);
+
+// const years = [1991,1970,2000,1993,1998];
+// const ages = [];
+
+// for(let i = 0; i<years.length; i++){
+//     ages.push(2023 - years[i]);
+// }
+// console.log(ages);
+
+// const person = [
+//     'ali',
+//     'alipour',
+//     1991,
+//     ['ali','hossein'],
+// ];
+// const arrayTypes = [];
+// for(let i = 0; i<person.length; i++){
+//     if(typeof person[i] !== 'string'){
+//         continue;
+//     }
+//     arrayTypes.push(typeof person[i]);
+// }
+// console.log(arrayTypes);
+
+// for(let i = 0; i<person.length; i++){
+//     if(typeof person[i] === 'number'){
+//         break;
+//     }
+//     arrayTypes.push(typeof person[i]);
+// }
+// console.log(arrayTypes);
