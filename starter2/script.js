@@ -200,3 +200,9 @@
 //     arrayTypes.push(typeof person[i]);
 // }
 // console.log(arrayTypes);
+
+let number = Math.trunc(Math.random()*30)+1;
+while(number !== 21){
+    number = Math.trunc(Math.random()*30)+1;
+    console.log(`the random number is : ${number}`);
+}
