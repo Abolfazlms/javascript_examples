@@ -104,3 +104,19 @@
 // console.log(person);
 
 // console.log(`${person.firstName} has ${person.friends.length} friends, and his best friend is called ${person.friends[0]}`)
+
+const person = {
+        firstName:'ali',
+        lastName:'alipour',
+        birthYear:1991,
+        friends:['ali','hossein'],
+        hasDriverLicense:true,
+        ageCalculator:function(){
+            this.age = 2023-this.birthYear;
+        },       
+        getSummary:function(){
+            return `${this.firstName} is a ${this.ageCalculator()} years old person, and he has ${this.hasDriverLicense ? 'a' : 'no'} driver's license.`
+        }
+};
+console.log(person.ageCalculator());
+console.log(person.getSummary());
