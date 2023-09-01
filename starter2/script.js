@@ -105,18 +105,48 @@
 
 // console.log(`${person.firstName} has ${person.friends.length} friends, and his best friend is called ${person.friends[0]}`)
 
-const person = {
-        firstName:'ali',
-        lastName:'alipour',
-        birthYear:1991,
-        friends:['ali','hossein'],
-        hasDriverLicense:true,
-        ageCalculator:function(){
-            this.age = 2023-this.birthYear;
-        },       
-        getSummary:function(){
-            return `${this.firstName} is a ${this.ageCalculator()} years old person, and he has ${this.hasDriverLicense ? 'a' : 'no'} driver's license.`
-        }
+// const person = {
+//         firstName:'ali',
+//         lastName:'alipour',
+//         birthYear:1991,
+//         friends:['ali','hossein'],
+//         hasDriverLicense:true,
+//         ageCalculator:function(){
+//             this.age = 2023-this.birthYear;
+//         },       
+//         getSummary:function(){
+//             return `${this.firstName} is a ${this.ageCalculator()} years old person, and he has ${this.hasDriverLicense ? 'a' : 'no'} driver's license.`
+//         }
+// };
+// console.log(person.ageCalculator());
+// console.log(person.getSummary());
+
+const person1 = {
+    fullName:'ali alipour',
+    height:1.80,
+    mass:50,
+    BMI_Calculator:function(){
+        this.bmi = this.mass/(this.height**2);
+        return this.bmi;
+    }
 };
-console.log(person.ageCalculator());
-console.log(person.getSummary());
+const person2 = {
+    fullName:'hossein hosseini',
+    height:1.91,
+    mass:60,
+    BMI_Calculator:function(){
+        this.bmi = this.mass/(this.height**2);
+        return this.bmi;
+    }
+};
+
+person1.BMI_Calculator();
+person2.BMI_Calculator();
+
+if(person1.bmi>person2.bmi){
+    console.log(`${person1.fullName}'s BMI(${person1.bmi}) is higher than ${person2.fullName}'s BMI(${person2.bmi})`);
+}else if(person2.bmi>person1.bmi){
+    console.log(`${person2.fullName}'s BMI(${person2.bmi}) is higher than ${person1.fullName}'s BMI(${person1.bmi})`);
+}else{
+    console.log(`${person1.fullName}'s BMI(${person1.bmi}) is equal to ${person2.fullName}'s BMI(${person2.bmi})`);
+}
