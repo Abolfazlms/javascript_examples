@@ -106,3 +106,15 @@
 // console.log(
 //     `the amplitude of temperaturs is ${tempAmplitudeCalculator(temperatures)}`
 // );
+
+const data1 = [17, 21, 23];
+const data2 = [12, -5, 5, 0, 4];
+
+const printForcast = function (temperatures) {
+    let message = '... ';
+    for (let i = 0; i < temperatures.length; i++) {
+        message += `${temperatures[i]}°C in ${i + 1} days ... `;
+    }
+    console.log(message);
+};
+printForcast(data1);
