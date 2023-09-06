@@ -75,3 +75,9 @@ p {
     backdrop-filter: blur(3px);
     z-index: 2;
 }
+button {
+    border: none;
+}
+button:hover {
+    background-color: #ececec;
+}
