@@ -73,7 +73,7 @@
 //     }
 //     else{
 //         return bill*0.2;
-//     }    
+//     }
 //     return bill>=50 && bill<=300 ? bill*0.15 : bill*0.2;
 // }
 // const bills = [125,55,44];
@@ -113,7 +113,7 @@
 //         hasDriverLicense:true,
 //         ageCalculator:function(){
 //             this.age = 2023-this.birthYear;
-//         },       
+//         },
 //         getSummary:function(){
 //             return `${this.firstName} is a ${this.ageCalculator()} years old person, and he has ${this.hasDriverLicense ? 'a' : 'no'} driver's license.`
 //         }
@@ -215,7 +215,7 @@
 //     const tip = tipsCalculator(bills[i]);
 //     tips.push(tip);
 //     total_values.push(tip+bills[i]);
-// }    
+// }
 // function tipsCalculator(bill){
 //     return bill >= 50 && bill <= 300 ? bill*0.15 : bill*0.2 ;
 // }
