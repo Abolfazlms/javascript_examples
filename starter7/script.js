@@ -57,15 +57,23 @@ const restaurant = {
 
 // console.log(main, second);
 
-const [starter, main] = restaurant.orderFood(2, 0);
+// const [starter, main] = restaurant.orderFood(2, 0);
 
-console.log(starter, main);
+// console.log(starter, main);
 
 //Nested Destructuring
-const array2 = [21, 22, 23, [24, 25]];
+// const array2 = [21, 22, 23, [24, 25]];
 
 // const [i, , , j] = array2;
-const [i, , , [j, k]] = array2;
-console.log(i, j, k);
+// const [i, , , [j, k]] = array2;
+// console.log(i, j, k);
 
 //Default values
+// const [i = 1, j = 1, k = 1] = [21, 22];
+// console.log(i, j, k);
+
+// const { name, openingHours, mainMenu, categories } = restaurant;
+// console.log(name, mainMenu, categories, openingHours);
+
+const { name: restaurantName, openingHours: hours } = restaurant;
+console.log(restaurantName, hours);
