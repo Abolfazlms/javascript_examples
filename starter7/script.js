@@ -26,6 +26,10 @@ const restaurant = {
             close: 24,
         },
     },
+
+    orderFood: function (starter_index, main_index) {
+        return [this.starterMenu[starter_index], this.mainMenu[main_index]];
+    },
 };
 
 // const simple_array = [21, 22, 25];
@@ -37,3 +41,31 @@ const restaurant = {
 // const [x, y, z] = simple_array;
 
 // console.log(a, b, c, x, y, z);
+
+// const [first, second] = restaurant.categories;
+
+// let [main, , second] = restaurant.categories;
+// console.log(main, second);
+
+//Switching Variables
+
+// const temp = main;
+// main = second;
+// second = temp;
+
+// [main, second] = [second, main];
+
+// console.log(main, second);
+
+const [starter, main] = restaurant.orderFood(2, 0);
+
+console.log(starter, main);
+
+//Nested Destructuring
+const array2 = [21, 22, 23, [24, 25]];
+
+// const [i, , , j] = array2;
+const [i, , , [j, k]] = array2;
+console.log(i, j, k);
+
+//Default values
