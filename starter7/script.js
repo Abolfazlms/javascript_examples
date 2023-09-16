@@ -30,7 +30,12 @@ const restaurant = {
     orderFood: function (starter_index, main_index) {
         return [this.starterMenu[starter_index], this.mainMenu[main_index]];
     },
-    deliveryFood: function ({ time, addres, main_index, starter_index }) {
+    deliveryFood: function ({
+        time,
+        addres,
+        main_index = 1,
+        starter_index = 2,
+    }) {
         console.log(
             `Order Received!\n${this.starterMenu[starter_index]} and ${this.mainMenu[main_index]} will be delivered to ${addres} at ${time}`
         );
@@ -42,6 +47,10 @@ restaurant.deliveryFood({
     addres: 'tehran',
     main_index: 0,
     starter_index: 2,
+});
+restaurant.deliveryFood({
+    time: '22:00',
+    addres: 'london',
 });
 
 // const simple_array = [21, 22, 25];
