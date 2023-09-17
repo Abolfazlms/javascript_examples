@@ -42,16 +42,16 @@ const restaurant = {
     },
 };
 
-restaurant.deliveryFood({
-    time: '21:30',
-    addres: 'tehran',
-    main_index: 0,
-    starter_index: 2,
-});
-restaurant.deliveryFood({
-    time: '22:00',
-    addres: 'london',
-});
+// restaurant.deliveryFood({
+//     time: '21:30',
+//     addres: 'tehran',
+//     main_index: 0,
+//     starter_index: 2,
+// });
+// restaurant.deliveryFood({
+//     time: '22:00',
+//     addres: 'london',
+// });
 
 // const simple_array = [21, 22, 25];
 
@@ -109,3 +109,11 @@ restaurant.deliveryFood({
 //     fri: { open: ro, close: rc },
 // } = openingHours;
 // console.log(ro, rc);
+
+const array1 = [21, 22, 23, 24, 25];
+const array2 = [...array1, 26, 27];
+
+console.log(array2);
+
+console.log(...array2);
+console.log(21, 22, 23, 24, 25, 26, 27);
