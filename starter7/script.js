@@ -46,7 +46,12 @@ const restaurant = {
             `Here is your delicious pasta with ${ing1}, ${ing2} and ${ing3}.`
         );
     },
+    orderPizza: function (mainIngredient, ...otherIngredients) {
+        console.log(mainIngredient, otherIngredients);
+    },
 };
+
+//Destructuring
 
 // restaurant.deliveryFood({
 //     time: '21:30',
@@ -123,8 +128,8 @@ const restaurant = {
 // } = openingHours;
 // console.log(ro, rc);
 
-const array1 = [21, 22, 23, 24, 25];
-const array2 = [...array1, 26, 27];
+// const array1 = [21, 22, 23, 24, 25];
+// const array2 = [...array1, 26, 27];
 
 // console.log(array2);
 
@@ -154,3 +159,34 @@ restaurantCopy.name = 'Classico Italiano 2';
 
 console.log(restaurantCopy.name);
 console.log(restaurant.name);
+
+// REST Patterns
+
+const array1 = [21, 22, 23, 24, 25, ...[26, 27]];
+const [a, b, ...others] = array1;
+console.log(a, b, others);
+
+const [pizza, pasta, ...otherFood] = [
+    ...restaurant.mainMenu,
+    ...restaurant.starterMenu,
+];
+
+console.log(pizza, pasta, otherFood);
+
+const { sat, ...weekdays } = restaurant.openingHours;
+console.log(sat, weekdays);
+
+const add = function (...numbers) {
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+    // console.log(numbers);
+    console.log(sum);
+};
+add(21, 4);
+add(1, 2, 3, 4, 5, 6, 7, 8, 9);
+add(25, 35, 5);
+
+restaurant.orderPizza('chicken', 'onion', 'mushrooms', 'olives');
+restaurant.orderPizza('chicken');
