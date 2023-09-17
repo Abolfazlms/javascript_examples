@@ -40,6 +40,12 @@ const restaurant = {
             `Order Received!\n${this.starterMenu[starter_index]} and ${this.mainMenu[main_index]} will be delivered to ${addres} at ${time}`
         );
     },
+    orderPasta: function (ing1, ing2, ing3) {
+        //ing : ingredients
+        console.log(
+            `Here is your delicious pasta with ${ing1}, ${ing2} and ${ing3}.`
+        );
+    },
 };
 
 // restaurant.deliveryFood({
@@ -52,6 +58,13 @@ const restaurant = {
 //     time: '22:00',
 //     addres: 'london',
 // });
+// const ingredients = [
+//     prompt("Let's make pasta! ingredients 1?"),
+//     prompt('ingredients 2?'),
+//     prompt('ingredients 3?'),
+// ];
+
+// restaurant.orderPasta(...ingredients);
 
 // const simple_array = [21, 22, 25];
 
@@ -123,6 +136,21 @@ console.log(newMenu);
 
 //shallow copy
 const copyMenu = [...restaurant.mainMenu];
+console.log(copyMenu);
 
 //merge two arrays
-const menu = [...newMenu, ...copyMenu];
+const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(menu);
+
+const username = 'ali';
+const array3 = [...username, 'r', 'e', 'z', 'a'];
+console.log(array3);
+
+const restaurant2 = { founding: 1998, ...restaurant, founder: 'ali' };
+console.log(restaurant2);
+
+const restaurantCopy = { ...restaurant };
+restaurantCopy.name = 'Classico Italiano 2';
+
+console.log(restaurantCopy.name);
+console.log(restaurant.name);
