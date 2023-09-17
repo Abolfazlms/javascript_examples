@@ -113,7 +113,16 @@ const restaurant = {
 const array1 = [21, 22, 23, 24, 25];
 const array2 = [...array1, 26, 27];
 
-console.log(array2);
+// console.log(array2);
 
-console.log(...array2);
-console.log(21, 22, 23, 24, 25, 26, 27);
+// console.log(...array2);
+// console.log(21, 22, 23, 24, 25, 26, 27);
+
+const newMenu = [...restaurant.mainMenu, 'Hamberger'];
+console.log(newMenu);
+
+//shallow copy
+const copyMenu = [...restaurant.mainMenu];
+
+//merge two arrays
+const menu = [...newMenu, ...copyMenu];
