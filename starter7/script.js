@@ -193,5 +193,5 @@ const restaurant = {
 
 // restaurant.numGuests = 0;
 // const guests = restaurant.numGuests || 21;
-const guests2 = restaurant.numGuests ?? 21;
-console.log(guests2);
+// const guests2 = restaurant.numGuests ?? 21;
+// console.log(guests2);
