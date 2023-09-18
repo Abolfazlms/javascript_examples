@@ -136,57 +136,62 @@ const restaurant = {
 // console.log(...array2);
 // console.log(21, 22, 23, 24, 25, 26, 27);
 
-const newMenu = [...restaurant.mainMenu, 'Hamberger'];
-console.log(newMenu);
+// const newMenu = [...restaurant.mainMenu, 'Hamberger'];
+// console.log(newMenu);
 
-//shallow copy
-const copyMenu = [...restaurant.mainMenu];
-console.log(copyMenu);
+// //shallow copy
+// const copyMenu = [...restaurant.mainMenu];
+// console.log(copyMenu);
 
-//merge two arrays
-const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
-console.log(menu);
+// //merge two arrays
+// const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+// console.log(menu);
 
-const username = 'ali';
-const array3 = [...username, 'r', 'e', 'z', 'a'];
-console.log(array3);
+// const username = 'ali';
+// const array3 = [...username, 'r', 'e', 'z', 'a'];
+// console.log(array3);
 
-const restaurant2 = { founding: 1998, ...restaurant, founder: 'ali' };
-console.log(restaurant2);
+// const restaurant2 = { founding: 1998, ...restaurant, founder: 'ali' };
+// console.log(restaurant2);
 
-const restaurantCopy = { ...restaurant };
-restaurantCopy.name = 'Classico Italiano 2';
+// const restaurantCopy = { ...restaurant };
+// restaurantCopy.name = 'Classico Italiano 2';
 
-console.log(restaurantCopy.name);
-console.log(restaurant.name);
+// console.log(restaurantCopy.name);
+// console.log(restaurant.name);
 
-// REST Patterns
+// // REST Patterns
 
-const array1 = [21, 22, 23, 24, 25, ...[26, 27]];
-const [a, b, ...others] = array1;
-console.log(a, b, others);
+// const array1 = [21, 22, 23, 24, 25, ...[26, 27]];
+// const [a, b, ...others] = array1;
+// console.log(a, b, others);
 
-const [pizza, pasta, ...otherFood] = [
-    ...restaurant.mainMenu,
-    ...restaurant.starterMenu,
-];
+// const [pizza, pasta, ...otherFood] = [
+//     ...restaurant.mainMenu,
+//     ...restaurant.starterMenu,
+// ];
 
-console.log(pizza, pasta, otherFood);
+// console.log(pizza, pasta, otherFood);
 
-const { sat, ...weekdays } = restaurant.openingHours;
-console.log(sat, weekdays);
+// const { sat, ...weekdays } = restaurant.openingHours;
+// console.log(sat, weekdays);
 
-const add = function (...numbers) {
-    let sum = 0;
-    for (let i = 0; i < numbers.length; i++) {
-        sum += numbers[i];
-    }
-    // console.log(numbers);
-    console.log(sum);
-};
-add(21, 4);
-add(1, 2, 3, 4, 5, 6, 7, 8, 9);
-add(25, 35, 5);
+// const add = function (...numbers) {
+//     let sum = 0;
+//     for (let i = 0; i < numbers.length; i++) {
+//         sum += numbers[i];
+//     }
+//     // console.log(numbers);
+//     console.log(sum);
+// };
+// add(21, 4);
+// add(1, 2, 3, 4, 5, 6, 7, 8, 9);
+// add(25, 35, 5);
 
-restaurant.orderPizza('chicken', 'onion', 'mushrooms', 'olives');
-restaurant.orderPizza('chicken');
+// restaurant.orderPizza('chicken', 'onion', 'mushrooms', 'olives');
+// restaurant.orderPizza('chicken');
+
+// restaurant.numGuests = 0;
+// const guests = restaurant.numGuests || 21;
+const guests2 = restaurant.numGuests ?? 21;
+console.log(guests2);
